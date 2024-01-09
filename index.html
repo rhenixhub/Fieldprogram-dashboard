@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      
+      position: relative;
+      height: 100px;
+    }
+
+    .header {
+      background-color: #cccccc;
+      background-image: linear-gradient(lightgreen,white,white);
+      border-bottom:2px solid #4C7CBA;
+      padding: 10px;
+      text-align: center;
+      position: relative;
+
+      
+    }
+
+    .logo-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1px;
+      margin-top: 1px;
+
+    }
+
+    .logo {
+      width: 190px;
+    
+    }
+
+    .logo.left {
+      position: absolute;
+      top: 1px;
+      left: 1px;
+       width: 100px;
+    }
+
+    .logo.right {
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      height: 110px;
+    }
+
+    .logo img {
+      max-width: 100%;
+      
+    }
+
+    .project-name {
+      font-weight: bold;
+       font-family: "Times New Roman", Times, serif;
+    }
+
+    .link-group {
+      margin-bottom: 25px;
+    
+      
+    }
+
+    .group-name {
+      text-align: center;
+      font-weight: bold;
+      margin-bottom: 10px;
+      padding-top: 15px;
+        color:darkblue;
+        font-family:"Times New Roman", Times, serif;
+  font-size:20px;
+    }
+
+    .link-group-list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .link-group-list a {
+      flex-basis: 50%;
+      display: flex;
+      align-items: center;
+      padding:20px;
+      text-decoration: none;
+      color: darkblue;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position: center;
+      background-color: white;
+      background-repeat: no-repeat;
+        font-family:Calibri;
+  font-size:20px; 
+  font-weight:bold;
+
+    }
+
+    .link-group-list a img {
+      margin-right: 10px;
+      max-width: 50px;
+      height: 80px;
+    }
+
+    @media (max-width: 500px) {
+      .link-group-list a {
+        flex-basis: 100%;
+        font-size: 14px;
+      }
+    }
+    @media (max-width: 768px) {
+      .logo-container {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .logo {
+        width: 190px;
+        height: auto;
+      }
+
+      .logo.left {
+        position: relative;
+        top: 1px;
+        left: 1px;
+        margin-bottom: 5px;
+      }
+
+      .logo.right {
+        position: relative;
+        top: auto;
+        right: auto;
+      }
+    }
+     @media (max-width: 480px) {
+      .logo {
+        width: 190px;
+       
+      }
+
+      .logo-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo-container">
+        <div class="logo left">
+          <img src="Images/rhenix_logo.png" alt="Left Logo">
+        </div>
+        
+      </div>
+      <div class="project-name">
+        FIELD PROGRAM DASHBOARD
+      </div>
+    </div>
+    <!--<div style="background-image: url(Images/backgroundimage.png);height: auto;
+    
+     background-size: cover;">-->
+    <div class="link-group" >
+      <div class="group-name">PHASE I</div>
+      <div class="link-group-list">
+      	<a href="https://docs.google.com/forms/d/e/1FAIpQLSdosdyE9In2Caf_iwJfG1xeXymZG4Rs1SxH91TvLiY6q67mOg/viewform" target="_blank">
+          <img src="Images/doctorappointment.jpg" alt="Daily checklist for field nurse">
+          Daily checklist for field nurse
+        </a>
+        <a href=" https://docs.google.com/forms/d/e/1FAIpQLSe9LEyLEkHnnyqmKHGESfoAw2dcFXBofQMxUEaafKazkUFuaQ/viewform" target="_blank">
+          <img src="Images/medicaltestrecording.png"
+            alt="Village phone numbers" >
+          Village phone numbers
+        </a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSega3OSCJdee6dQ3Rut-h9S_FFSa_PUXps3SwpS_5W3J8989g/viewform" target="_blank">
+          <img src="Images/patient details.png" alt="Village information with statistics"> 
+       Village information with statistics
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfhhF7eiyyGem8vOEoRdcUN-8taHXrhnmicZVr0P3rwkfkvXg/viewform" target="_blank">
+          <img src="Images/basicfooddetails.png" alt="Information about important persons in the village">
+          Information about important persons in the village
+        </a>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfzroYoNfVKF0TjDONage5-Wdl1sBVssdURRQoyf7kzEAs9vg/viewform" target="_blank">
+          <img src="Images/medicaldetails.png" alt="Daily village activities info">
+          Daily village activities info
+        </a>
+        
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLScaDV5Zk1oivk_3OFxT4kePdvqV-09pmBdMFGEPF5r_5xeRHQ/viewform" target="_blank">
+          <img src="Images/purchase.png" alt="Transportation details">
+         Transportation details
+        </a>
+        
+        
+      </div>
+    </div>
+    <div class="link-group" >
+      <div class="group-name">PHASE II</div>
+      <div class="link-group-list">
+        <a href=" https://docs.google.com/forms/d/e/1FAIpQLSdeoHaS08c4p9uXv0u93fRkl8PghrX9nndAd4nAeQ2qlfujjw/viewform" target="_blank">
+          <img src="Images/medicationmonitoring.jpeg"
+            alt="Patient register details" >
+         Patient register details
+        </a>
+        
+        
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
